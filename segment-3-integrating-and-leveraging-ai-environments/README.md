@@ -32,7 +32,7 @@ This segment focuses on creating hybrid AI labs that combine home and cloud reso
 - **Phi**: Microsoft's small language model
 - **DeepSeek**: High-performance open models
 - **Gemma**: Google's large language model
-- ***: Google's lightweight models
+- **Gemma Nano**: Google's lightweight model
 - **Qwen**: Alibaba's large language model
 - **FoundationSec**: Cisco's cybersecurity open weights model
 - Other notable models and their use cases
