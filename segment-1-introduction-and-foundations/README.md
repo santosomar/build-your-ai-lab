@@ -83,7 +83,7 @@ This segment covers the fundamentals of AI labs and focuses on setting up home-b
 1. Start with [Overview of AI Labs](./01-overview-ai-labs.md) to understand your options
 2. Read [Choosing Hardware](./03-choosing-hardware.md) to plan your budget
 3. Follow [Operating Systems](./06-operating-systems.md) to set up your OS
-4. Install [Essential Software](./07-essential-software.md) and [Ollama](./08-installing-ollama.md)
+4. Install [Essential Software](./07-essential-software.md) and [Ollama](./08-installing-ollama-and-labs.md)
 5. Experiment with models before deciding on [AI Frameworks](./09-ai-frameworks.md)
 
 ### For Intermediate Users

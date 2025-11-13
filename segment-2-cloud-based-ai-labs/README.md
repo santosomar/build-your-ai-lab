@@ -19,47 +19,40 @@ This segment provides comprehensive coverage of cloud-based AI infrastructure, e
    - Agents and Guardrails
    - Pricing and best practices
 
-3. **[Amazon SageMaker](./03-amazon-sagemaker.md)** (Coming Soon)
+3. **[Amazon SageMaker](./03-amazon-sagemaker.md)**
    - End-to-end ML platform
    - SageMaker Studio and notebooks
    - AutoML with Autopilot
    - Model training and deployment
    - MLOps tools and pipelines
 
-4. **[Google Vertex AI](./04-google-vertex-ai.md)** (Coming Soon)
+4. **[Google Vertex AI](./04-google-vertex-ai.md)**
    - Unified AI platform
    - Gemini models (1.5 Pro, Flash, Ultra)
    - AutoML and custom training
    - Model Garden and pre-trained models
    - Vertex AI Workbench
 
-5. **[Microsoft Azure AI Foundry](./05-azure-ai-foundry.md)** (Coming Soon)
+5. **[Microsoft Azure AI Foundry](./05-azure-ai-foundry.md)**
    - Azure AI Studio and AI Foundry
    - Azure OpenAI Service (GPT-4, GPT-4o)
    - Model catalog and deployment
    - Prompt flow and orchestration
    - AI Foundry Agent Service
 
-6. **[OpenAI Agent Builder and Agent Kit](./06-openai-agent-builder.md)** (Coming Soon)
+6. **[OpenAI Agent Builder and Agent Kit](./06-openai-agent-builder.md)**
    - Assistants API for building agents
    - Function calling and tool use
    - Code Interpreter and file search
    - OpenAI Swarm for multi-agent systems
    - Agent orchestration patterns
 
-7. **[Cost Management and Optimization](./07-cost-management.md)** (Coming Soon)
+7. **[Cost Management and Optimization](./07-cost-management.md)**
    - Cloud pricing models explained
    - Cost optimization strategies
    - Monitoring and budgeting tools
    - Reserved instances and savings plans
    - Cost comparison across providers
-
-8. **[Cloud Services Overview 2025](./CLOUD_SERVICES_OVERVIEW_2025.md)**
-   - Quick reference guide for all services
-   - Model comparison tables
-   - Pricing comparison
-   - Agent platforms comparison
-   - Getting started checklists
 
 ## Quick Start Guide
 
@@ -67,19 +60,19 @@ This segment provides comprehensive coverage of cloud-based AI infrastructure, e
 1. Start with [Advantages and Disadvantages](./01-cloud-advantages-disadvantages.md) to understand cloud AI
 2. Choose a platform based on your ecosystem:
    - AWS users → [Amazon Bedrock](./02-amazon-bedrock.md)
-   - Google users → Vertex AI (coming soon)
-   - Microsoft users → Azure AI Foundry (coming soon)
-   - Platform-agnostic → OpenAI (coming soon)
-3. Review [Cloud Services Overview](./CLOUD_SERVICES_OVERVIEW_2025.md) for quick comparisons
+   - Google users → [Google Vertex AI](./04-google-vertex-ai.md)
+   - Microsoft users → [Azure AI Foundry](./05-azure-ai-foundry.md)
+   - Platform-agnostic → [OpenAI Agent Builder](./06-openai-agent-builder.md)
+3. Review [Cost Management and Optimization](./07-cost-management.md) for cost strategies
 4. Set up cost alerts and monitoring
 5. Start with free tiers and small experiments
 
 ### For Intermediate Users
-1. Compare services in [Cloud Services Overview](./CLOUD_SERVICES_OVERVIEW_2025.md)
-2. Deep dive into specific platforms
-3. Implement cost optimization strategies
-4. Build hybrid workflows (cloud + local)
-5. Explore agent platforms for automation
+1. Deep dive into specific platforms ([Bedrock](./02-amazon-bedrock.md), [SageMaker](./03-amazon-sagemaker.md), [Vertex AI](./04-google-vertex-ai.md), [Azure AI Foundry](./05-azure-ai-foundry.md))
+2. Implement [cost optimization strategies](./07-cost-management.md)
+3. Build hybrid workflows (cloud + local)
+4. Explore agent platforms for automation
+5. Compare different cloud providers for your use case
 
 ### For Advanced Users
 1. Multi-cloud strategies
@@ -269,7 +262,7 @@ This segment provides comprehensive coverage of cloud-based AI infrastructure, e
 
 ### Week 1-2: Foundations
 - [ ] Read [Advantages and Disadvantages](./01-cloud-advantages-disadvantages.md)
-- [ ] Review [Cloud Services Overview](./CLOUD_SERVICES_OVERVIEW_2025.md)
+- [ ] Review available cloud platforms and their offerings
 - [ ] Create accounts on chosen platform(s)
 - [ ] Set up billing alerts
 - [ ] Complete "Hello World" API call
