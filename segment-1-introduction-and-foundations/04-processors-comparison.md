@@ -302,20 +302,54 @@ Measured in TOPS (Tera Operations Per Second):
 
 **Note:** Direct TOPS comparison is misleading due to different architectures and precision levels.
 
+## Integrated AI Systems: Grace Blackwell Architecture
+
+### NVIDIA DGX Spark (GB10 Superchip)
+
+A new category that combines CPU and GPU in a unified architecture:
+
+**Architecture:**
+- **CPU:** 20-core Arm (10× Cortex-X925 + 10× Cortex-A725)
+- **GPU:** Integrated Blackwell GPU with 5th Gen Tensor Cores
+- **Memory:** 128GB LPDDR5x unified system memory (shared between CPU and GPU)
+- **Memory Bandwidth:** 272 GB/s
+- **AI Performance:** Up to 1 PFLOP (FP4), ~1,000 TOPS
+
+**Key Advantages:**
+- **Unified Memory:** No data copying between CPU and GPU
+- **Lower Latency:** Direct CPU-GPU communication
+- **Energy Efficient:** ~300W total system power
+- **Compact:** Desktop form factor (~8L volume)
+- **Simplified Development:** Single memory space
+
+**Limitations:**
+- **Arm Architecture:** Some x86_64 software needs recompilation
+- **Memory Bandwidth:** Lower than discrete high-end GPUs
+- **Fixed Configuration:** Cannot upgrade components
+- **Cost:** $15,000-$20,000 (higher than DIY)
+
+**Best For:**
+- AI development and prototyping
+- Model fine-tuning (up to 200B parameters)
+- Local inference deployment
+- Research environments
+- Organizations wanting turnkey AI solutions
+
 ## Comparison Matrix
 
-| Feature | CPU | GPU | TPU | NPU |
-|---------|-----|-----|-----|-----|
-| **Parallelism** | Low (4-64 cores) | High (1000s cores) | Very High | Medium |
-| **AI Training** | Slow | Fast | Very Fast | Not Designed |
-| **AI Inference** | Good (low latency) | Excellent | Excellent | Good (efficient) |
-| **Power Consumption** | 65-350W | 250-700W | 200-450W | 1-10W |
-| **Cost** | $200-$3,000 | $500-$10,000 | Cloud only | Integrated |
-| **Availability** | Widely available | Widely available | Cloud only | Limited |
-| **Flexibility** | Highest | High | Medium | Low |
-| **Software Support** | Universal | Excellent (NVIDIA) | TensorFlow focused | Vendor specific |
-| **Memory** | System RAM | 8-80GB VRAM | 16-128GB HBM | Shared system RAM |
-| **Best For** | General compute | Deep learning | Large-scale training | Edge inference |
+| Feature | CPU | GPU | TPU | NPU | Integrated (GB10) |
+|---------|-----|-----|-----|-----|------------------|
+| **Parallelism** | Low (4-64 cores) | High (1000s cores) | Very High | Medium | High |
+| **AI Training** | Slow | Fast | Very Fast | Not Designed | Fast |
+| **AI Inference** | Good (low latency) | Excellent | Excellent | Good (efficient) | Excellent |
+| **Power Consumption** | 65-350W | 250-700W | 200-450W | 1-10W | ~300W (system) |
+| **Cost** | $200-$3,000 | $500-$10,000 | Cloud only | Integrated | $15,000-$20,000 |
+| **Availability** | Widely available | Widely available | Cloud only | Limited | Limited |
+| **Flexibility** | Highest | High | Medium | Low | Medium |
+| **Software Support** | Universal | Excellent (NVIDIA) | TensorFlow focused | Vendor specific | Good (NVIDIA stack) |
+| **Memory** | System RAM | 8-80GB VRAM | 16-128GB HBM | Shared system RAM | 128GB unified |
+| **Memory Architecture** | Separate | Separate | Separate | Shared | Unified |
+| **Best For** | General compute | Deep learning | Large-scale training | Edge inference | Unified AI development |
 
 ## Choosing the Right Processor
 
@@ -432,9 +466,8 @@ Are you building a home lab?
 
 ## Resources
 
-- NVIDIA Developer Blog - GPU architecture deep dives
-- Google Cloud TPU Documentation - TPU guides
-- Intel AI Documentation - NPU information
-- Papers with Code - Benchmark comparisons
-- MLPerf - Standardized AI benchmarks
+- NVIDIA DGX Spark: https://www.nvidia.com/en-us/products/workstations/dgx-spark/
+- NVIDIA Documentation: https://docs.nvidia.com/dgx/dgx-spark/
+- PyTorch: https://pytorch.org
+- PCPartPicker: https://pcpartpicker.com
 

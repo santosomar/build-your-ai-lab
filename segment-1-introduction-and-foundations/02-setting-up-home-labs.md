@@ -237,6 +237,7 @@ Power Factor ≈ 0.7 for computers
 
 **Purpose:** Large models, multi-GPU training, research
 
+**Option A: Multi-GPU Workstation**
 - **CPU:** AMD Threadripper or Intel Xeon
 - **GPU:** 2-4× NVIDIA RTX 4090 or professional GPUs
 - **RAM:** 128GB+ DDR5 ECC
@@ -245,6 +246,18 @@ Power Factor ≈ 0.7 for computers
 - **Case:** Server chassis or custom build
 - **Cooling:** Custom liquid cooling
 - **Networking:** 10GbE network card
+
+**Option B: Integrated AI System (NVIDIA DGX Spark)**
+- **System:** NVIDIA DGX Spark (~$15,000-$20,000)
+- **CPU:** 20-core Arm (Grace Blackwell GB10)
+- **GPU:** Integrated Blackwell GPU
+- **RAM:** 128GB unified LPDDR5x
+- **Storage:** Up to 4TB NVMe M.2
+- **Power:** ~300W (vs. 1,200W+ for Option A)
+- **Form Factor:** Compact desktop (~8L)
+- **Software:** Pre-installed DGX OS and AI stack
+- **Advantages:** Turnkey solution, energy efficient, compact, enterprise support
+- **Considerations:** Arm architecture, limited upgradeability, higher upfront cost
 
 ## Phased Approach
 

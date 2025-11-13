@@ -165,6 +165,7 @@ What do you want to do?
 - Python 3.8+
 - NVIDIA GPU (optional but recommended)
 - CUDA 11.8 or 12.1 (for GPU)
+- **Note:** For Arm-based systems (NVIDIA DGX Spark, Apple Silicon), ensure you use ARM64-compatible builds
 
 **Installation:**
 
@@ -183,8 +184,12 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
 # CPU only
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 
-# Apple Silicon (Mac M1/M2/M3)
+# Apple Silicon (Mac M1/M2/M3) and Arm systems
 conda install pytorch torchvision torchaudio -c pytorch
+
+# NVIDIA DGX Spark (Arm + CUDA)
+# Use CUDA-enabled ARM64 builds
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 
 # Using pip (GPU)
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121

@@ -75,6 +75,16 @@ Before diving into specific components, understand these principles:
 - NVIDIA H100 (80GB) - Latest data center GPU (~$30,000+)
 - NVIDIA H200 (141GB) - Newest with HBM3e memory (~$40,000+)
 
+**Complete AI Systems:**
+- **NVIDIA DGX Spark** - Compact AI supercomputer (~$15,000-$20,000 estimated)
+  - 20-core Arm CPU (Grace Blackwell GB10)
+  - Integrated Blackwell GPU with 5th Gen Tensor Cores
+  - 128GB unified LPDDR5x memory
+  - Up to 1 PFLOP AI compute (FP4)
+  - Desktop form factor
+  - Pre-installed DGX OS and AI software stack
+  - Ideal for: AI development, model fine-tuning, local inference
+
 **AMD Alternatives:**
 - AMD Radeon RX 7900 XTX (24GB) - Strong performance (~$900)
 - AMD Radeon RX 7900 XT (20GB) - Good value (~$700)
@@ -302,6 +312,84 @@ Before diving into specific components, understand these principles:
 - Z790 - Enthusiast, overclocking (~$250-$500)
 - W790 - Workstation, Xeon CPUs (~$500-$1,000)
 - Z890 - Latest for Core Ultra (~$300-$600)
+
+## NVIDIA DGX Spark: Complete AI System Comparison
+
+### What is the DGX Spark?
+
+The NVIDIA DGX Spark represents a new category of AI computing: a compact, desktop-sized AI supercomputer that brings data center-class AI performance to developers and researchers.
+
+**Key Specifications:**
+- **Processor:** GB10 Grace Blackwell Superchip
+  - 20-core Arm CPU (10× Cortex-X925 + 10× Cortex-A725)
+  - Integrated Blackwell GPU with 5th Generation Tensor Cores
+- **Memory:** 128GB LPDDR5x unified system memory
+- **Storage:** Up to 4TB NVMe M.2 with self-encryption
+- **Performance:** Up to 1 PFLOP AI compute (FP4 precision), ~1,000 TOPS
+- **Connectivity:** Wi-Fi 7, 10GbE Ethernet, USB4
+- **Form Factor:** Compact desktop (approximately 8L volume)
+- **Power:** ~300W TDP
+- **OS:** NVIDIA DGX OS (Ubuntu 24.04 LTS based)
+
+### DGX Spark vs. Traditional GPU Workstations
+
+| Feature | DGX Spark | High-End DIY (RTX 4090) | Multi-GPU Workstation |
+|---------|-----------|------------------------|----------------------|
+| **Cost** | ~$15,000-$20,000 | ~$4,500 | ~$12,000+ |
+| **AI Performance** | 1 PFLOP (FP4) | ~660 TFLOPS (FP8) | 1.3+ PFLOPS (2× 4090) |
+| **Memory** | 128GB unified | 24GB VRAM + 64GB RAM | 48GB VRAM + 128GB RAM |
+| **Memory Bandwidth** | 272 GB/s | 1,008 GB/s (VRAM) | 2,016 GB/s (VRAM) |
+| **Power Consumption** | ~300W | ~575W | ~1,200W+ |
+| **Form Factor** | Compact desktop | Full tower | Server chassis |
+| **Setup Complexity** | Plug & play | Moderate | High |
+| **Software Stack** | Pre-installed | Manual setup | Manual setup |
+| **Architecture** | Arm-based | x86_64 | x86_64 |
+| **Best For** | Unified AI development | Cost-effective performance | Maximum performance |
+
+### When to Choose DGX Spark
+
+**Advantages:**
+✅ **Unified Architecture** - CPU and GPU share memory, reducing data transfer bottlenecks
+✅ **Compact Form Factor** - Desktop-sized vs. server chassis
+✅ **Energy Efficient** - ~300W vs. 1,200W+ for equivalent performance
+✅ **Turnkey Solution** - Pre-configured with optimized AI software stack
+✅ **Enterprise Support** - NVIDIA support and updates
+✅ **Quiet Operation** - Better thermal design than multi-GPU systems
+✅ **Model Capacity** - Can handle models up to 200B parameters
+
+**Considerations:**
+⚠️ **Higher Upfront Cost** - $15K-$20K vs. $4K-$5K for DIY
+⚠️ **Arm Architecture** - Some software may require recompilation
+⚠️ **Limited Upgradeability** - Integrated design, cannot upgrade components
+⚠️ **Memory Bandwidth** - Lower than discrete high-end GPUs
+⚠️ **Availability** - May have limited availability or waitlist
+
+### When to Choose Traditional GPU Workstation
+
+**Choose DIY/Traditional When:**
+- Budget is primary concern ($4K vs. $15K+)
+- Need maximum GPU memory bandwidth
+- Require x86_64 compatibility
+- Want upgrade flexibility
+- Need multiple discrete GPUs for specific workloads
+- Prefer building and customizing systems
+
+### DGX Spark vs. Cloud AI Services
+
+| Factor | DGX Spark | Cloud (AWS/GCP/Azure) |
+|--------|-----------|----------------------|
+| **Initial Cost** | $15,000-$20,000 | $0 |
+| **Monthly Cost** | $0 (electricity only) | $500-$2,000+ |
+| **Break-even** | ~12-18 months | N/A |
+| **Data Privacy** | Complete control | Shared infrastructure |
+| **Latency** | Local (< 1ms) | Network dependent |
+| **Scalability** | Fixed | Unlimited |
+| **Internet Required** | No | Yes |
+
+**Break-even Analysis:**
+- DGX Spark: $18,000 one-time
+- Cloud equivalent (A100 instance): ~$1,000-$1,500/month
+- Break-even: 12-18 months of continuous use
 
 ### Power Supply Unit (PSU)
 

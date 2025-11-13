@@ -248,6 +248,14 @@ Premium: $1,030-$1,430 (27-38%)
 
 ### AI-Specific Vendors
 
+**NVIDIA**
+- **DGX Spark** - Compact AI supercomputer (~$15,000-$20,000)
+  - Turnkey AI development system
+  - 128GB unified memory
+  - Pre-installed DGX OS and AI stack
+  - Enterprise support
+  - Ideal for: Serious AI development, research labs, enterprises
+
 **Lambda Labs**
 - AI-optimized configurations
 - Pre-installed ML frameworks
@@ -274,15 +282,16 @@ Premium: $1,030-$1,430 (27-38%)
 ### Choose DIY If:
 
 ✅ You have technical skills or want to learn
-✅ Budget is primary concern
+✅ Budget is primary concern ($2K-$5K range)
 ✅ You want specific component choices
 ✅ You enjoy building and tinkering
 ✅ You have time for research and assembly
 ✅ You're comfortable troubleshooting
 ✅ You want maximum upgrade flexibility
 ✅ You need unusual configurations
+✅ You prefer x86_64 architecture
 
-### Choose Pre-Built If:
+### Choose Pre-Built Workstation If:
 
 ✅ You value time over money
 ✅ You want comprehensive warranty
@@ -292,6 +301,18 @@ Premium: $1,030-$1,430 (27-38%)
 ✅ You're buying for business/research
 ✅ You want tested, stable configuration
 ✅ You need professional appearance
+
+### Choose Integrated AI System (e.g., DGX Spark) If:
+
+✅ You need maximum AI performance in compact form
+✅ Budget allows for $15K-$20K investment
+✅ You want turnkey AI development platform
+✅ Energy efficiency is important (~300W vs. 1,200W+)
+✅ You need to handle models up to 200B parameters
+✅ You prefer unified memory architecture
+✅ You want enterprise-grade support
+✅ Space constraints (desktop vs. server chassis)
+✅ You're willing to work with Arm architecture
 
 ## Hybrid Approach
 
@@ -526,8 +547,8 @@ Premium: $1,030-$1,430 (27-38%)
 
 ## Resources
 
-- PCPartPicker - Build planning tool
 - /r/buildapc - Community help
-- YouTube Build Guides - Visual tutorials
-- Manufacturer Support - Component documentation
-
+- NVIDIA DGX Spark: https://www.nvidia.com/en-us/products/workstations/dgx-spark/
+- NVIDIA Documentation: https://docs.nvidia.com/dgx/dgx-spark/
+- PyTorch: https://pytorch.org
+- PCPartPicker: https://pcpartpicker.com

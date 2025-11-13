@@ -159,14 +159,40 @@ When building your AI lab, one of the first decisions you'll make is whether to 
 - You want redundancy and backup options
 - You have both sensitive and non-sensitive workloads
 
+## Emerging Category: Compact AI Supercomputers
+
+A new category of AI hardware bridges the gap between home labs and cloud:
+
+**NVIDIA DGX Spark and Similar Systems:**
+- Desktop-sized AI supercomputers
+- Data center-class performance (~1 PFLOP)
+- 128GB+ unified memory
+- Can handle models up to 200B parameters
+- Price: $15,000-$20,000
+- Power: ~300W (vs. 1,200W+ for equivalent multi-GPU systems)
+
+**Benefits:**
+- Brings cloud-level performance to home/office
+- More powerful than traditional workstations
+- More affordable than full data center systems
+- Energy efficient and compact
+- Pre-configured software stack
+
+**Considerations:**
+- Higher upfront cost than DIY systems
+- May use Arm architecture (software compatibility)
+- Limited upgradeability
+- Newer technology with evolving ecosystem
+
 ## Hybrid AI Labs: The Best of Both Worlds
 
 Many practitioners adopt a **hybrid approach**:
 
-1. **Development and Prototyping**: Use local hardware for rapid iteration
+1. **Development and Prototyping**: Use local hardware (workstation or compact AI system) for rapid iteration
 2. **Training Large Models**: Leverage cloud resources for compute-intensive tasks
 3. **Inference and Deployment**: Deploy models where they make most sense (edge, cloud, or on-premises)
 4. **Data Management**: Keep sensitive data on-premises, use cloud for non-sensitive workloads
+5. **Scaling Strategy**: Start with compact AI system, burst to cloud when needed
 
 ## Getting Started
 

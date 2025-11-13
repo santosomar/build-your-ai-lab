@@ -47,6 +47,8 @@ Ollama is a powerful tool that makes it easy to run large language models (LLMs)
 ### Supported Platforms
 
 - Linux (x86_64, ARM64)
+  - x86_64: Traditional Intel/AMD systems
+  - ARM64: Raspberry Pi, NVIDIA DGX Spark, cloud ARM instances
 - macOS (Intel and Apple Silicon)
 - Windows (with WSL2 or native)
 
@@ -65,6 +67,12 @@ Ollama is a powerful tool that makes it easy to run large language models (LLMs)
 - Metal acceleration
 - Unified memory advantage
 - Good performance on M1/M2/M3
+
+**NVIDIA DGX Spark (Arm-based):**
+- CUDA acceleration via Blackwell GPU
+- 128GB unified memory
+- Excellent performance for AI workloads
+- Native ARM64 support
 
 ## Installation
 

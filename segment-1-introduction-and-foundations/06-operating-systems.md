@@ -124,6 +124,13 @@ Linux is the dominant operating system in AI research and production environment
 - **Cons:** Shorter support cycle (13 months)
 - **AI Support:** Good
 
+**NVIDIA DGX OS**
+- **Best for:** NVIDIA DGX systems (DGX Spark, DGX Station, etc.)
+- **Pros:** Optimized for AI workloads, pre-configured AI stack, NVIDIA support
+- **Cons:** Limited to DGX hardware, Arm-based (DGX Spark)
+- **AI Support:** Excellent (purpose-built for AI)
+- **Base:** Ubuntu 24.04 LTS with NVIDIA optimizations
+
 ### Installation Tips
 
 **Dual Boot Setup:**
