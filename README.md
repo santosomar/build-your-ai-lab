@@ -2,6 +2,17 @@
 
 Resources for my **Build Your Own AI Lab** [O'Reilly Live Course](https://www.oreilly.com/live-events/build-your-own-ai-lab/0642572007495/) and [Pearson's on-demand course](https://www.oreilly.com/videos/build-your-own/9780135439616/). A hands-on guide to home and cloud-based AI labs and infrastructure.
 
+## Course Structure
+
+This repository is organized into four main segments:
+
+1. **[Segment 1: Introduction and Foundations](./segment-1-introduction-and-foundations/)** - Overview of AI labs, home-based setup, hardware selection, and security
+2. **[Segment 2: Cloud-Based AI Labs](./segment-2-cloud-based-ai-labs/)** - Cloud platforms, services, cost management, and security
+3. **[Segment 3: Integrating and Leveraging AI Environments](./segment-3-integrating-and-leveraging-ai-environments/)** - Hybrid labs, open-source models, development environments, and experiment tracking
+4. **[Segment 4: Advanced Topics and Practical Applications](./segment-4-advanced-topics-and-practical-applications/)** - High-performance computing, edge AI, and real-world case studies
+
+## About This Course
+
 - Instruction on set up and optimization of AI labs to research and experiment in a secure environment
 - Emphasis on real-world applications, hands-on projects, and case studies that allow you to apply learned concepts directly
 - Focus on open-source large language models (LLMs), small language models (SLMs) and generative AI.
