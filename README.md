@@ -1,6 +1,6 @@
 # Build Your Own AI Lab
 
-Resources for the **Build Your Own AI Lab** course. A hands-on guide to home and cloud-based AI labs and infrastructure.
+Resources for my **Build Your Own AI Lab** [O'Reilly Live Course](https://www.oreilly.com/live-events/build-your-own-ai-lab/0642572007495/) and [Pearson's on-demand course](https://www.oreilly.com/videos/build-your-own/9780135439616/). A hands-on guide to home and cloud-based AI labs and infrastructure.
 
 - Instruction on set up and optimization of AI labs to research and experiment in a secure environment
 - Emphasis on real-world applications, hands-on projects, and case studies that allow you to apply learned concepts directly
