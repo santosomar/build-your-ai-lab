@@ -308,3 +308,29 @@ Before diving into specific components, understand these principles:
 **Sizing Your PSU:**
 
 **Calculate Total Power:**
+
+To properly size your PSU, add up the maximum power draw (in watts) of all major components:
+
+1. **CPU:** Check the TDP (Thermal Design Power) from the manufacturer's specs.
+2. **GPU(s):** Look up the rated power draw for each GPU (often 200–450W each for modern cards).
+3. **Motherboard:** Typically 30–80W.
+4. **RAM:** Usually 2–5W per stick.
+5. **Storage (SSD/HDD):** 2–10W per drive.
+6. **Fans and Cooling:** 2–5W per fan, 10–30W for liquid cooling pumps.
+7. **Other PCIe cards or peripherals:** Check manufacturer specs.
+
+**Example Calculation:**
+
+| Component      | Quantity | Power per unit | Total Power |
+|---------------|----------|---------------|-------------|
+| CPU           | 1        | 125W          | 125W        |
+| GPU           | 2        | 350W          | 700W        |
+| Motherboard   | 1        | 60W           | 60W         |
+| RAM           | 4        | 4W            | 16W         |
+| SSD           | 2        | 5W            | 10W         |
+| Fans          | 6        | 3W            | 18W         |
+| Liquid Cooler | 1        | 20W           | 20W         |
+| **Total**     |          |               | **949W**    |
+
+Add a safety margin of 20–30% for peak loads and future upgrades:
+
