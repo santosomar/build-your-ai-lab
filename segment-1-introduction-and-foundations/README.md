@@ -53,12 +53,13 @@ This segment covers the fundamentals of AI labs and focuses on setting up home-b
    - Jupyter Notebook and JupyterLab setup
    - Development tools and IDEs
 
-8. **[Installing Ollama](./08-installing-ollama.md)**
+8. **[Installing Ollama and Labs](./08-installing-ollama-and-labs.md)**
    - What is Ollama and why use it
-   - Installation on Linux, macOS, and Windows
-   - Running your first model
-   - Model management and customization
-   - API usage and integration examples
+   - Installing Ollama and running your first model
+   - Ollama Labs - Hands-on Tutorials
+   - Ollama API usage and integration examples
+   - Ollama model management and customization
+
 
 9. **[Do You Need AI Frameworks? (TensorFlow, PyTorch, Hugging Face)](./09-ai-frameworks.md)**
    - Overview of major AI frameworks
