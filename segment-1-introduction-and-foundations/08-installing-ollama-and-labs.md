@@ -75,81 +75,10 @@ Ollama is a powerful tool that makes it easy to run large language models (LLMs)
 - Native ARM64 support
 
 ## Installation
+Go to [Ollama Official Website](https://ollama.com) for the latest installation instructions.
 
-### Linux
-
-```bash
-# Install Ollama
-curl -fsSL https://ollama.com/install.sh | sh
-
-# Verify installation
-ollama --version
-
-# Start Ollama service (usually starts automatically)
-ollama serve
-```
-
-**Manual Installation:**
-```bash
-# Download binary
-curl -L https://ollama.com/download/ollama-linux-amd64 -o ollama
-chmod +x ollama
-sudo mv ollama /usr/local/bin/
-
-# Create service (optional)
-sudo useradd -r -s /bin/false -m -d /usr/share/ollama ollama
-```
-
-**Systemd Service:**
-```bash
-# Check service status
-sudo systemctl status ollama
-
-# Start service
-sudo systemctl start ollama
-
-# Enable on boot
-sudo systemctl enable ollama
-
-# View logs
-sudo journalctl -u ollama -f
-```
-
-### macOS
-
-```bash
-# Option 1: Download from website
-# Visit https://ollama.com/download
-# Download Ollama.app
-# Drag to Applications folder
-
-# Option 2: Homebrew
-brew install ollama
-
-# Verify installation
-ollama --version
-```
-
-### Windows
-
-**Option 1: Native Windows (Preview)**
-```powershell
-# Download installer from https://ollama.com/download
-# Run OllamaSetup.exe
-# Follow installation wizard
-
-# Verify
-ollama --version
-```
-
-**Option 2: WSL2 (Recommended)**
-```bash
-# In WSL2 Ubuntu
-curl -fsSL https://ollama.com/install.sh | sh
-
-# Verify
-ollama --version
-```
+## Labs
+- [Omar's Ollama Labs - Hands-on Tutorials](https://github.com/The-Art-of-Hacking/h4cker/tree/master/ai_research/ollama-labs) - Comprehensive collection of practical labs and exercises for learning Ollama
 
 ## Basic Usage
 
@@ -176,25 +105,19 @@ I'm doing well, thank you for asking! How can I help you today?
 
 ```bash
 # Llama 3.2 (Meta) - 3B parameters
-ollama run llama3.2
-
-# Llama 3.1 (Meta) - 8B parameters
-ollama run llama3.1
+ollama run gpt-oss
 
 # Phi 3 (Microsoft) - 3.8B parameters
-ollama run phi3
-
-# Mistral (Mistral AI) - 7B parameters
-ollama run mistral
-
-# DeepSeek Coder - Code-focused
-ollama run deepseek-coder
+ollama run phi4
 
 # Gemma 2 (Google) - 9B parameters
-ollama run gemma2
+ollama run gemma3
 
-# Qwen 2.5 (Alibaba) - 7B parameters
-ollama run qwen2.5
+# Qwen 3 (Alibaba) - 7B parameters
+ollama run qwen3
+
+# Qwen 3 Coder (Alibaba) - 7B parameters
+ollama run qwen3-coder
 ```
 
 ### Model Management
@@ -606,17 +529,20 @@ print(answer)
 3. **Validate inputs** - Sanitize user prompts
 4. **Monitor logs** - Check for unusual activity
 
+## Resources
+
+- [Ollama Official Website](https://ollama.com)
+- [Ollama GitHub](https://github.com/ollama/ollama)
+- [Model Library](https://ollama.com/library)
+- [Ollama Discord](https://discord.gg/ollama)
+- [Documentation](https://github.com/ollama/ollama/tree/main/docs)
+- [Omar's Ollama Labs - Hands-on Tutorials](https://github.com/The-Art-of-Hacking/h4cker/tree/master/ai_research/ollama-labs) - Comprehensive collection of practical labs and exercises for learning Ollama
+
 ## Next Steps
 
 - **[AI Frameworks](./09-ai-frameworks.md)** - TensorFlow, PyTorch, Hugging Face
 - **[Security and Network Setup](./10-security-network.md)** - Secure your lab
 - **[Segment 3](../segment-3-integrating-and-leveraging-ai-environments/)** - Running open-source models
 
-## Resources
 
-- Ollama Official Website - https://ollama.com
-- Ollama GitHub - https://github.com/ollama/ollama
-- Model Library - https://ollama.com/library
-- Ollama Discord - Community support
-- Documentation - https://github.com/ollama/ollama/tree/main/docs
 
